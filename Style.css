@@ -1,0 +1,949 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: poppins,sans-serif;
+}
+
+body a {
+	text-decoration: none;
+}
+body ul {
+	list-style: none;
+}
+
+.maincontainer {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+}
+.mainleftdiv {
+	width: 30%;
+	background-color: #343232;
+}
+.mainrightdiv {
+	width: 70%;
+    background-color: #161515;
+    overflow: auto;
+    scroll-behavior: smooth;
+    }
+
+/*-----left div logo start-----*/
+.logo {
+	height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo h1 a{
+	color: #efefef;
+}
+/*.logo h1 a::before {
+	content: '';
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	border-top: 4px solid #eb7317;
+	border-left: 4px solid #eb7317;
+}
+.logo h1 a::after {
+	content: '';
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	border-right: 4px solid #eb7317;
+	border-bottom: 4px solid #eb7317;
+	margin-top: 20px;
+}*/
+/*-----left div logo end-----*/
+
+/*-----left div menu start---*/
+
+.menus {
+	height: 60%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.menus ul li  {
+    width: 300px;
+    height: 50px;
+    background-color: #5a5353;
+    line-height: 50px;
+    margin-top: 10px; 
+    text-align: center;
+    border-radius: 25px;  
+    cursor: pointer;
+}
+.menus ul li a {
+	text-decoration: none;
+	font-size: 16px;
+	color: #ffffff;
+}
+.menus .fa {
+	margin-right: 10px;
+	font-size: 15px;
+}
+.menus .fa-home{
+	margin-right: 15px;
+}
+.menus .fa-user{
+	margin-right: 15px;
+}
+/*-----left div menu end-----*/
+
+/*-----left div footer start---*/
+.footer {
+	height: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.footer h5 {
+	font-size: 13px;
+	color: #efefef;
+}
+.footer span {
+	color: #eb7317;
+}
+/*-----left div footer end---*/
+
+/*-----right div start-----*/
+
+/*----right div homediv start----*/
+.homediv {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	/*display: none;*/
+}
+.homedivcontent img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+}
+.homedivcontent h3 {
+	text-align: center;
+	margin: 15px 0px;
+	font-size: 24px;
+	color: #efefef;
+}
+.homedivcontent h5 {
+	text-align: center;
+	font-size: 15px;
+	color: #efefef;
+}
+.homedivcontent span {
+	color: #eb7317;
+}
+.homedivcontent .mediallinks {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+}
+.mediallinks img {
+    width: 30px;
+    height: 30px;
+    border: none;
+    margin-right: 10px;
+    border: 2px solid #ffffff;
+}
+/*----right div homediv end---*/
+
+/*----About page div start----*/
+.Aboutdiv {
+	width: 80%;
+	height: 100vh;
+	margin-left: 10%;
+	/*display: none;*/
+}
+.Aboutdiv .aboutheading {
+	height: 80px;
+	line-height: 80px;
+    text-align: center;
+    color: #efefef;
+    margin-bottom: 30px;
+    position: relative;
+}
+.aboutheading h2 {
+	color: #efefef;
+}
+.aboutheading h2 span {
+	color: #eb7317;
+}
+.aboutheading h2::after {
+    content: " ";
+    width: 100%;
+    height: 2px;
+    background-color: #343232;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.aboutcontent {
+	display: flex;
+	justify-content: space-around;
+}
+
+.aboutcontent1 h4 {
+	line-height: 50px;
+	color: #efefef;
+}
+.aboutcontent1 h4 span {
+	color: #eb7317;
+	padding-left: 5px;
+}
+.aboutchild1 {
+	width: 100px;
+	height: 100px;
+	background-color: #5a5353;
+	text-align: center;
+	padding-top: 15px;
+	margin-top: 20px;
+}
+.aboutchild2 {
+	width: 100px;
+	height: 100px;
+	background-color: #5a5353;
+	text-align: center;
+	padding-top: 15px;
+	margin-top: 25px;
+}
+.aboutchild1 h1, .aboutchild2 h1 {
+	color: #eb7317;
+}
+.aboutchild1 h4, .aboutchild2 h4 {
+	color: #efefef;
+	margin-top: 5px;
+}
+.aboutchild1, .aboutchild2 {
+	box-shadow: 0px 0px 6px 1px #efefef;
+}
+/*----About page div end-----*/
+
+/*----portfolio page start----*/
+.prtfoliodiv {
+	width: 100%;
+	scroll-behavior: smooth;
+	overflow: auto;
+	scroll-behavior: smooth;
+	/*display: none;*/
+}
+.prtfoliodiv .portfolioheading {
+	height: 80px;
+	line-height: 80px;
+    text-align: center;
+    color: #efefef;
+    margin-bottom: 30px;
+    position: relative;
+}
+.portfolioheading h2::after {
+    content: " ";
+    width: 80%;
+    margin-left: 10%;
+    height: 2px;
+    background-color: #343232;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.skillsmaindiv {
+	width: 80%;
+	margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+.skillpercentage {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #efefef;
+	text-transform: uppercase;
+}
+.skillpercentage h3 {
+	font-size: 13px;
+}
+.skillevel {
+	width: 300px;
+	height: 13px;
+	background-color: white;
+	margin-bottom: 50px;
+}
+.skillactuallevel1 {
+	width: 100%;
+	height: 13px;
+	background-color: green;
+}
+.skillactuallevel2, .skillactuallevel4 {
+	width: 75%;
+	height: 13px;
+	background-color: green;
+}
+.skillactuallevel3, .skillactuallevel5, .skillactuallevel6, .skillactuallevel7, .skillactuallevel9 {
+    width: 70%;
+    height: 13px;
+    background-color: green;
+}
+.skillactuallevel8 {
+	width: 60%;
+	height: 13px;
+	background-color: green;
+}
+.skillactuallevel10 {
+	width: 85%;
+	height: 13px;
+	background-color: green;
+}
+/*---recent work start----*/
+.recentworkmain {
+	width: 80%;
+	margin-left: 10%;
+	position: relative;
+	margin-top: 15px;
+}
+.recentworkheading h4 {
+	color: #efefef;
+	margin-bottom: 8px;
+}
+/*.recentworkheading hr {
+    width: 80px;
+    height: 3px;
+    background-color: #eb7317;
+    border: none;
+    border-radius: 25px;
+}*/
+.recentwork {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 20px;
+}
+.recentwork img {
+	width: 350px;
+	height: 200px;
+	margin-top: 10px;
+}
+.recentwork1 {
+    text-align: left;
+}
+.recentwork2 {
+	text-align: right;
+}
+/*recent work end---*/
+/*----portfolio page end-----*/
+
+/*-----services page start---*/
+.servicesmain {
+	width: 100%;
+	height: 100vh;
+	margin-top: 130px;
+	margin-bottom: 20px;
+	/*display: none;*/
+}
+.servicesheading {
+	/*position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);*/
+	width: 80%;
+	margin-left: 10%;
+	text-align: center;
+	padding-top: 10px;
+}
+.servicesheading h2 {
+	margin: 20px 0px;
+	color: #efefef;
+	position: relative;
+}
+.servicesheading h2::before {
+    content: '';
+	width: 100%;
+	height: 2px;
+	background-color: #343232;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	margin-bottom: -10px;
+}
+.servicesheading p {
+	margin-top: 30px;
+	margin-bottom: 50px;
+	color: #efefef;
+}
+.servicediv {
+	width: 80%;
+	margin-left: 10%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.servicecont1 {
+	width: 100px;
+	height: 80px;
+	/*background-color: #343232;*/
+	margin-bottom: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	box-shadow: 2px 2px 4px #efefef;
+}
+.servicecont2 {
+	width: 100px;
+	height: 80px;
+	/*background-color: #343232;*/
+	margin-bottom: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	box-shadow: 2px 2px 4px #efefef;
+}
+.servicecont1 h5, .servicecont2 h5 {
+	color: #eb7317;
+	cursor: pointer;
+}
+
+/*-----services page end---*/
+/*-----contact page end---*/
+.contactmain {
+	width: 100%;
+	height: 100vh;
+}
+.contactheading {
+	margin: 30px 0px;
+	/*padding-top: 20px;*/
+}
+.contactheading h2 {
+    text-align: center;
+    color: #efefef;
+    position: relative;
+}
+.contactheading h2::after{
+	content: '';
+	width: 80%;
+	margin-left: 10%;
+	height: 2px;
+	background-color: #343232;
+	position: absolute; 
+	left: 0;
+	bottom: 0;
+	margin-bottom: -10px;
+
+}
+.contactinfo {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	padding-top: 50px;
+}
+.contactinfo h4 {
+	color: #efefef;
+	margin-bottom: 20px;
+}
+.contactinfo .fa {
+	margin-right: 10px;
+	font-size: 22px;
+}
+.contactinfo .fa-phone {
+    color: green;
+}
+.contactinfo .fa-map-marker {
+	color: red;
+}
+.contactinfo .fa-envelope {
+	color: yellow;
+}
+.contactinfo .callus p span {
+    color: #eb7317;
+}
+.contactinfo p {
+	color: #efefef;
+}
+.formdiv {
+	width: 100%;
+	margin-top: 50px;
+}
+.formdiv form {
+	padding-top: 30px;
+}
+.formdiv .formdiv1, .formdiv2 {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.formdiv1 input {
+	width: 250px;
+	height: 35px;
+	border-radius: 15px;
+	border: none;
+	padding-left: 10px;
+	font-size: 14px;
+}
+.formdiv1 input:focus {
+	outline: none;
+}
+.formdiv2 {
+	margin-top: 30px;
+}
+.formdiv2 input {
+	width: 250px;
+	height: 35px;
+	border-radius: 15px;
+	border: none;
+	padding-left: 10px;
+}
+.formdiv2 input:focus {
+	outline: none;
+}
+.formdiv2 textarea {
+	border: none;
+	top: 0;
+	overflow: hidden;
+}
+.formdiv2 textarea:focus {
+	outline: none;
+}
+.submitbtn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 80px;
+}
+.submitbtn button {
+	width: 160px;
+	height: 35px;
+	border-radius: 15px;
+	border: none;
+	outline: none;
+	background-color: #f83212;
+	color: #efefef;
+	font-size: 15px;
+	cursor: pointer;
+}
+/*-----contact page end---*/
+
+/*-----toggle_menu starts-----*/
+
+.toggle_menu2 .fa-cog {
+	position: fixed;
+	top: 0;
+	right: 0;
+	margin-top: 30px;
+    margin-right: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 17px;
+    animation: spin 0.5s linear infinite;  
+}
+@keyframes spin {
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+/*-----toggle menu end------*/
+
+/*------stylizer div starts----*/
+.stylizer_main {
+	width: 250px;
+	height: 150px;
+	position: fixed;
+	right: 0;
+	top: 0;
+	background-color: #343232;
+	color: #efefef;
+	text-align: center;
+	display: none;
+	overflow: hidden;
+	z-index: 1;
+}
+.color_style {
+	height: 75px;
+}
+.stylizer_main h5 {
+	margin: 8px 0px;
+}
+
+.diff_colors {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.diff_themes {
+	display: flex;
+	justify-content: space-around;
+}
+.stylizer_main button {
+	width: 25px;
+	height: 25px;
+	margin-top: 5px;
+	border-radius: 50%;
+	border: none;
+}
+.diff_colors .blue_color {
+	background-color: #7f71f9;
+	cursor: pointer;
+}
+.diff_colors .orange_color {
+	background-color: #eb7317;
+	cursor: pointer;
+}
+.diff_colors .green_color {
+	background-color: #45ec1e;
+	cursor: pointer;
+}
+.diff_colors .yellow_color {
+	background-color: yellow;
+	cursor: pointer;
+}
+.diff_colors .white_color {
+	background-color: #efefef;
+	cursor: pointer;
+}
+.diff_colors .black_color{
+	background-color: #042337;
+	cursor: pointer;
+	display: none;
+}
+.diff_colors .white_orange {
+	background-color: #eb7317;
+	cursor: pointer;
+	display: none;
+}
+.diff_colors .white_green {
+    background-color: #45ec1e;
+	cursor: pointer;
+	display: none;
+}
+.diff_colors .white_yellow {
+    background-color: yellow;
+	cursor: pointer;
+	display: none;
+}
+.diff_themes .white_theme {
+	background-color: #efefef;
+	cursor: pointer;
+}
+.diff_themes .black_theme {
+	background-color: #161515;
+	cursor: pointer;
+}
+.close_stylizer {
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #efefef;
+	margin-right: 5px;
+	margin-top: 5px;
+	cursor: pointer;
+}
+/*------stylizer div end---*/
+
+
+
+/*-----------Media query start for mobile device ------*/
+/*--------media query for medium devices----*/
+@media only screen and (min-width: 375px){
+	.mainrightdiv {
+		width: 100%;
+	}
+	.mainleftdiv {
+		display: none;
+    }
+
+    .aboutcontent {
+	    flex-direction: column;
+   }
+   .aboutcontent2 {
+   	    display: flex;
+   	    justify-content: space-between;
+   	    align-items: center;
+   	    margin-top: 20px;
+   }
+   .prtfoliodiv {
+   	    margin-top: 30px;
+   }
+   .skillsmaindiv {
+   	    flex-direction: column;
+   }
+   
+   .recentwork {
+   	   flex-direction: column;
+   	   justify-content: center;
+   	   align-items: center;
+   }
+   .recentworkheading h4 {
+   	text-align: center;
+   }
+   .recentworkheading hr {
+   	margin-left: 37%;
+   }
+   .recentwork img {
+	width: 300px;
+	height: 150px;
+   }
+   .recentwork1 {
+    text-align: center;
+}
+.recentwork2 {
+	text-align: center;
+}
+.servicesmain {
+	margin-top: 40px;
+}
+.contactmain {
+	margin-top: 60px;
+	padding-top: 30px;
+}
+   .contactinfo {
+   	flex-direction: column;
+   	justify-content: center;
+   	padding-top: 20px;
+   }
+   .contactinfo .location {
+   	margin: 30px 0px;
+   }
+   .contactinfo h4 {
+   	margin-bottom: 10px;
+   }
+   .formdiv .formdiv1, .formdiv2 {
+   	flex-direction: column;
+   }
+   .formdiv {
+	margin-top: 20px;
+}
+   .formdiv form {
+	padding-top: 0px;
+}
+.formdiv1 input {
+	margin-top: 20px;
+}
+.formdiv2 {
+	margin-top: 20px;
+}
+.formdiv2 input {
+	margin-bottom: 20px;
+}
+.formdiv2 textarea {
+	width: 300px;
+	height: 100px;
+}
+.submitbtn {
+	margin-top: 40px;
+}
+.submitbtn button {
+	margin-bottom: 40px;
+}
+
+/*--------toggle_menu start---*/
+
+.toggle_menu1 .fa-bars {
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin-top: 30px;
+    margin-left: 10px;
+	color: #ffffff;
+    font-size: 17px;
+    cursor: pointer;
+}
+/*-------toggle menu end------*/
+/*------mobile view menus start---*/
+.mobile_div {
+	width: 250px;
+	height: 500px;
+	background-color: #343232;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+	overflow: hidden;
+	z-index: 1;
+}
+.mobile_logo {
+	height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mobile_logo h1 a{
+	color: #efefef;
+}
+.mobile_logo h1 a::before {
+	content: '';
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	border-top: 4px solid #eb7317;
+	border-left: 4px solid #eb7317;
+}
+.mobile_logo h1 a::after {
+	content: '';
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	border-right: 4px solid #eb7317;
+	border-bottom: 4px solid #eb7317;
+	margin-top: 20px;
+}
+.mobile_menus {
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.mobile_menus ul li  {
+    width: 200px;
+    height: 30px;
+    background-color: #5a5353;
+    line-height: 30px;
+    margin-top: 10px; 
+    text-align: center;
+    border-radius: 25px;  
+    cursor: pointer;
+}
+.mobile_menus ul li a {
+	text-decoration: none;
+	font-size: 14px;
+	color: #ffffff;
+}
+.mobile_menus .fa {
+	margin-right: 10px;
+	font-size: 14px;
+}
+.mobile_menus .fa-home{
+	margin-right: 15px;
+}
+.mobile_menus .fa-user{
+	margin-right: 15px;
+}
+.mobile_footer {
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.mobile_footer h5 {
+	font-size: 12px;
+	color: #efefef;
+}
+.mobile_footer span {
+	/*margin-left: 15px;*/
+	color: #eb7317;
+	font-family: poppins,sans-serif;
+}
+.close_menu {
+	position: absolute;
+	right: 0;
+	margin-top: 5px;
+	margin-right: 5px;
+	font-size: 18px;
+	color: #ffffff;
+	cursor: pointer;
+}
+.aboutcontent2 h4{
+  font-size: 14px;
+}
+.servicesheading p {
+	font-size: 16px;
+}
+.portfolioheading p {
+	font-size: 16px;
+}
+/*-----mobile view menus end---*/
+
+}
+
+/*--------media query for medium devices end----*/
+@media only screen and (min-width: 768px){
+.skillevel {
+	width: 450px;
+}
+    .recentwork img {
+	width: 500px;
+	height: 250px;
+   }
+}
+
+@media only screen and (min-width: 1024px){
+.mainleftdiv {
+		display: block;
+    }
+ .toggle_menu1 {
+        display: none;
+ }
+.toggle_menu1 .fa-bars {
+	display: none;
+}
+   .aboutcontent {
+	flex-direction: row;
+}
+.aboutcontent2 {
+	flex-direction: column;
+	margin-top: 0px;
+}
+.skillsmaindiv {
+	flex-direction: row;
+}
+.skillevel {
+	width: 250px;
+}
+.formdiv .formdiv1, .formdiv2 {
+	flex-direction: row;
+}
+.formdiv2 textarea {
+	width: 250px;
+	height: 100px;
+}
+.formdiv {
+	margin-top: 50px;
+}
+
+}
+
+@media only screen and (min-width: 1440px) {
+.mainleftdiv {
+		display: block;
+    }
+    .toggle_menu1 {
+        display: none;
+ }
+.skillevel {
+	width: 400px;
+}
+.recentwork {
+	flex-direction: row;
+}
+.recentwork img {
+	width: 420px;
+	height: 220px;
+	margin-top: 10px;
+}
+.formdiv1 input {
+	width: 300px;
+}
+.formdiv2 input {
+	width: 300px;
+}
+.formdiv2 textarea {
+	width: 300px;
+	height: 100px;
+}
+
+}
+/*-----------Media query end for mobile device ------*/
